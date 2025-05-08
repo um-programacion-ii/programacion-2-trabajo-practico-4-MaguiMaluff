@@ -1,0 +1,13 @@
+package Servicios;
+
+import Modelos.Usuario;
+
+import java.util.List;
+
+public interface UsuarioService {
+    Usuario buscarPorNombre(String nombre);
+    List<Usuario> obtenerTodos();
+    Usuario guardar(Usuario usuario);
+    void eliminar(Long id);
+    Usuario actualizar(Long id, Usuario usuario);
+}
