@@ -13,13 +13,13 @@ import lombok.Setter;
 @Setter
 
 public class Prestamo {
-    private long id;
+    private Long id;
     private Libro libro;
     private Usuario usuario;
     private LocalDate fechaPrestamo;
     private LocalDate fechaDevolucion;
 
-    public Prestamo(long id, Libro libro, Usuario usuario) {
+    public Prestamo(Long id, Libro libro, Usuario usuario) {
         this.id = id;
         this.libro = libro;
         this.usuario = usuario;
