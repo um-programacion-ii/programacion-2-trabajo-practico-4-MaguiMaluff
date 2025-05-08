@@ -11,12 +11,13 @@ import lombok.Setter;
 @Setter
 
 public class Libro {
-    private long id;
+    private Long id;
     private String titulo;
     private String autor;
     private EstadoLibro estado;
+    private String isbn;
 
-    public Libro(long id, String titulo, String autor) {
+    public Libro(Long id, String titulo, String autor) {
         this.id = id;
         this.titulo = titulo;
         this.autor = autor;
