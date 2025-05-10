@@ -6,6 +6,7 @@ import java.util.List;
 
 public interface UsuarioService {
     Usuario buscarPorNombre(String nombre);
+    Usuario buscarPorId(Long id);
     List<Usuario> obtenerTodos();
     Usuario guardar(Usuario usuario);
     void eliminar(Long id);
