@@ -17,10 +17,11 @@ public class Libro {
     private EstadoLibro estado;
     private String isbn;
 
-    public Libro(Long id, String titulo, String autor) {
+    public Libro(Long id, String titulo, String autor, String isbn) {
         this.id = id;
         this.titulo = titulo;
         this.autor = autor;
+        this.isbn = isbn;
         this.estado = EstadoLibro.DISPONIBLE;
     }
 
