@@ -5,12 +5,14 @@ import Modelos.Prestamo;
 import Modelos.Usuario;
 import Repositorios.PrestamoRepository;
 import Servicios.PrestamoService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
 public class PrestamoServiceImpl implements PrestamoService {
+    @Autowired
     private final PrestamoRepository prestamoRepository;
 
     public PrestamoServiceImpl(PrestamoRepository prestamoRepository) {

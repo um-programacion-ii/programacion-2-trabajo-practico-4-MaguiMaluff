@@ -4,12 +4,15 @@ import Exepciones.LibroNoEncontradoException;
 import Modelos.Libro;
 import Repositorios.LibroRepository;
 import Servicios.LibroService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
 public class LibroServiceImpl implements LibroService {
+
+    @Autowired
     private final LibroRepository libroRepository;
 
     public LibroServiceImpl(LibroRepository libroRepository) {
