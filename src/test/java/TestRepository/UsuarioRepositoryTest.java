@@ -1,8 +1,8 @@
 package TestRepository;
 
-import Modelos.Usuario;
-import Repositorios.UsuarioRepository;
-import RepositoriosImpl.UsuarioRepositoryImpl;
+import com.example.TP_4.Modelos.Usuario;
+import com.example.TP_4.Repositorios.UsuarioRepository;
+import com.example.TP_4.RepositoriosImpl.UsuarioRepositoryImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
