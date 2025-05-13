@@ -1,0 +1,70 @@
+-------------------------------------------------------------------------------
+Test set: TestControllers.LibroControllerTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 4.637 s <<< FAILURE! -- in TestControllers.LibroControllerTest
+TestControllers.LibroControllerTest.obtenerTodosCuandoNoHayLibrosTest -- Time elapsed: 0.234 s <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:61)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:128)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$matcher$9(StatusResultMatchers.java:640)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
+	at TestControllers.LibroControllerTest.obtenerTodosCuandoNoHayLibrosTest(LibroControllerTest.java:63)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
+TestControllers.LibroControllerTest.obtenerPorIdTest -- Time elapsed: 0.030 s <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:61)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:128)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$matcher$9(StatusResultMatchers.java:640)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
+	at TestControllers.LibroControllerTest.obtenerPorIdTest(LibroControllerTest.java:74)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
+TestControllers.LibroControllerTest.actualizarTest -- Time elapsed: 0.088 s <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:61)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:128)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$matcher$9(StatusResultMatchers.java:640)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
+	at TestControllers.LibroControllerTest.actualizarTest(LibroControllerTest.java:108)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
+TestControllers.LibroControllerTest.GETobtenerTodosTest -- Time elapsed: 0.017 s <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:61)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:128)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$matcher$9(StatusResultMatchers.java:640)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
+	at TestControllers.LibroControllerTest.GETobtenerTodosTest(LibroControllerTest.java:50)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
+TestControllers.LibroControllerTest.crearTest -- Time elapsed: 0.024 s <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:61)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:128)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$matcher$9(StatusResultMatchers.java:640)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
+	at TestControllers.LibroControllerTest.crearTest(LibroControllerTest.java:90)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
+TestControllers.LibroControllerTest.eliminarTest -- Time elapsed: 0.017 s <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:61)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:128)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$matcher$9(StatusResultMatchers.java:640)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
+	at TestControllers.LibroControllerTest.eliminarTest(LibroControllerTest.java:122)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
