@@ -1,10 +1,10 @@
 package TestServices;
 
-import Exepciones.PrestamoNoEncontradoException;
-import Modelos.Prestamo;
-import Modelos.Usuario;
-import Repositorios.PrestamoRepository;
-import ServiciosImpl.PrestamoServiceImpl;
+import com.example.TP_4.Exepciones.PrestamoNoEncontradoException;
+import com.example.TP_4.Modelos.Prestamo;
+import com.example.TP_4.Modelos.Usuario;
+import com.example.TP_4.Repositorios.PrestamoRepository;
+import com.example.TP_4.ServiciosImpl.PrestamoServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

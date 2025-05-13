@@ -1,9 +1,9 @@
 package TestServices;
 
-import Exepciones.UsuarioNoEncontradoExecption;
-import Modelos.Usuario;
-import Repositorios.UsuarioRepository;
-import ServiciosImpl.*;
+import com.example.TP_4.Exepciones.UsuarioNoEncontradoException;
+import com.example.TP_4.Modelos.Usuario;
+import com.example.TP_4.Repositorios.UsuarioRepository;
+import com.example.TP_4.ServiciosImpl.UsuarioServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -42,7 +42,7 @@ class UsuarioServiceImplTest {
         String nombre = "Juan Pérez";
         when(usuarioRepository.findByName(nombre)).thenReturn(Optional.empty());
 
-        assertThrows(UsuarioNoEncontradoExecption.class, () ->
+        assertThrows(UsuarioNoEncontradoException.class, () ->
                 usuarioService.buscarPorNombre(nombre)
         );
     }
@@ -65,7 +65,7 @@ class UsuarioServiceImplTest {
         Long id = 1L;
         when(usuarioRepository.findById(id)).thenReturn(Optional.empty());
 
-        assertThrows(UsuarioNoEncontradoExecption.class, () ->
+        assertThrows(UsuarioNoEncontradoException.class, () ->
                 usuarioService.buscarPorId(id)
         );
     }
@@ -89,7 +89,7 @@ class UsuarioServiceImplTest {
         Usuario usuario = new Usuario(id, "Juan Pérez", "jp@ejemplo.com");
         when(usuarioRepository.existsById(id)).thenReturn(false);
 
-        assertThrows(UsuarioNoEncontradoExecption.class, () ->
+        assertThrows(UsuarioNoEncontradoException.class, () ->
                 usuarioService.actualizar(id, usuario)
         );
     }

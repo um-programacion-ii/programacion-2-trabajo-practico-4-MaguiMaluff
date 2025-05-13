@@ -1,9 +1,9 @@
 package TestRepository;
 
-import Modelos.Prestamo;
-import Modelos.Usuario;
-import Repositorios.PrestamoRepository;
-import RepositoriosImpl.PrestamoRepositoryImpl;
+import com.example.TP_4.Modelos.Prestamo;
+import com.example.TP_4.Modelos.Usuario;
+import com.example.TP_4.Repositorios.PrestamoRepository;
+import com.example.TP_4.RepositoriosImpl.PrestamoRepositoryImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

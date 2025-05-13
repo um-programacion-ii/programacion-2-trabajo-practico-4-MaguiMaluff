@@ -1,2 +1,8 @@
+/home/magui/UM/cuarto_anio/programacion_2/TP_4/src/test/java/TestControllers/LibroControllerTest.java
+/home/magui/UM/cuarto_anio/programacion_2/TP_4/src/test/java/TestRepository/LibroRepositoryTest.java
+/home/magui/UM/cuarto_anio/programacion_2/TP_4/src/test/java/TestRepository/PrestamoRepositoryTest.java
+/home/magui/UM/cuarto_anio/programacion_2/TP_4/src/test/java/TestRepository/UsuarioRepositoryTest.java
 /home/magui/UM/cuarto_anio/programacion_2/TP_4/src/test/java/TestServices/LibroServiceImplTest.java
+/home/magui/UM/cuarto_anio/programacion_2/TP_4/src/test/java/TestServices/PrestamoServiceImplTest.java
+/home/magui/UM/cuarto_anio/programacion_2/TP_4/src/test/java/TestServices/UsuarioServiceImplTest.java
 /home/magui/UM/cuarto_anio/programacion_2/TP_4/src/test/java/com/example/TP_4/Tp4ApplicationTests.java
