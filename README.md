@@ -535,3 +535,131 @@ El uso de Inteligencia Artificial (IA) en este trabajo práctico debe seguir las
 ## 📝 Licencia
 
 Este trabajo es parte del curso de Programación II de Ingeniería en Informática. Uso educativo únicamente.
+#
+
+###### La siguiente parte fue generada con IA
+### USO
+
+---
+
+## 🚀 Instrucciones de Instalación y Ejecución
+
+1. **Clonar el repositorio:**
+
+   ```bash
+   git clone https://github.com/um-programacion-ii/programacion-2-trabajo-practico-4-MaguiMaluff.git
+   ```
+
+2. **Compilar el proyecto con Maven:**
+
+   ```bash
+   mvn clean install
+   ```
+
+3. **Ejecutar la aplicación:**
+
+   ```bash
+   mvn spring-boot:run
+   ```
+
+4. **Probar endpoints:**
+   Acceder desde el navegador o con Postman a:
+   `http://localhost:8080/api/...`
+
+---
+
+## 🧱 Arquitectura del Proyecto
+
+El sistema está estructurado en una **arquitectura en capas**, separando claramente responsabilidades:
+
+* **Modelo**: contiene las entidades principales como `Usuario`, `Libro`, `Prestamo`.
+* **Repositorio**: interfaces para el acceso a datos.
+* **Servicio**: lógica de negocio central. Aquí se aplican reglas y validaciones.
+* **Controlador**: expone la API REST, recibe y responde a solicitudes HTTP.
+
+
+---
+
+## 🧠 Decisiones de Diseño
+
+* Se utilizó **Spring Boot** por su simplicidad para configurar proyectos Java con dependencias modernas.
+* Se aplicaron **principios SOLID** para mejorar el mantenimiento y la escalabilidad del sistema.
+* Las operaciones de préstamos y devoluciones siguen una lógica de validación centralizada en el `PrestamoService`.
+* Se incorporaron pruebas unitarias con **JUnit5 y Mockito** para asegurar la calidad del código y facilitar el refactor.
+
+---
+
+## 💻 Requisitos del Sistema
+
+* **Java:** 21 o superior
+* **Maven:** 3.9.0 o superior
+* **Sistema Operativo:** Windows, macOS o Linux
+* **IDE Recomendado:** IntelliJ IDEA o Eclipse
+
+---
+
+## 📚 Ejemplos de Uso
+
+### Obtener todos los libros
+
+```bash
+curl -X GET http://localhost:8080/api/libros
+```
+
+### Crear un nuevo usuario
+
+```bash
+curl -X POST http://localhost:8080/api/usuarios/crear \
+     -H "Content-Type: application/json" \
+     -d '{
+           "id": 3L,
+           "nombre": "Juan Pérez",
+           "email": "juan.perez@example.com",
+         }'
+```
+
+### Registrar un préstamo
+
+```bash
+curl -X POST http://localhost:8080/api/prestamos/crear \
+     -H "Content-Type: application/json" \
+     -d '{
+           "libro": {
+             "id": 1
+           },
+           "usuario": {
+             "id": 1
+           }
+         }'
+```
+
+---
+
+## 📖 Documentación de Endpoints
+
+### 📘 Libros
+
+* **GET /api/libros**: Obtiene la lista de todos los libros.
+* **GET /api/libros/{id}**: Obtiene un libro por su ID.
+* **POST /api/libros/crear**: Crea un nuevo libro.
+* **PUT /api/libros/{id}**: Actualiza la información de un libro existente.
+* **DELETE /api/libros/{id}**: Elimina un libro por su ID.
+
+### 👤 Usuarios
+
+* **GET /api/usuarios/todos**: Obtiene la lista de todos los usuarios.
+* **GET /api/usuarios/{id}**: Obtiene un usuario por su ID.
+* **POST /api/usuarios/crear**: Crea un nuevo usuario.
+* **PUT /api/usuarios/{id}**: Actualiza la información de un usuario existente.
+* **DELETE /api/usuarios/{id}**: Elimina un usuario por su ID.
+
+### 📄 Préstamos
+
+* **GET /api/prestamos/todos**: Obtiene la lista de todos los préstamos.
+* **GET /api/prestamos/{id}**: Obtiene un préstamo por su ID.
+* **POST /api/prestamos/crear**: Crea un nuevo préstamo.
+* **PUT /api/prestamos/{id}**: Actualiza la información de un préstamo existente.
+* **DELETE /api/prestamos/{id}**: Elimina un préstamo por su ID.
+
+---
+
